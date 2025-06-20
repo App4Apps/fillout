@@ -1,0 +1,81 @@
+:root {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: black;
+    background-color: #f9fafb;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+    background-color: #f9fafb;
+    color: black;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+}
+button:hover {
+    background-color: #b4b4b4;
+}
+
+.page {
+    background-color: #9da4b226;
+    transition: background-color 0.5s ease;
+}
+
+.page-selected {
+    position: relative;
+}
+
+.btn {
+    background-color: #9da4b226;
+}
+
+.add-btn {
+    background: #ffffff;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.add-btn:hover {
+    opacity: 1;
+}
+
+.icon {
+    color: #8c93a1;
+}
+
+.icon-selected {
+    color: #f59d0e;
+}
+
+.dashed {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed #000;
+    line-height: 0.1em;
+    z-index: 1;
+}
+
+.context-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    gap: 8px;
+    border: none;
+}
