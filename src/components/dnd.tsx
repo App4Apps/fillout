@@ -21,9 +21,13 @@ import { PageIcon } from "./page-icon";
 import { ContextMenu } from "./context-menu.tsx";
 import { ClickAwayListener } from "./click-away-listener.tsx";
 
-// find a hole in the array or use a new number
 // maybe we'd have ids from the DB for pages if we're focused on the online experience
 // if it's offline, this could work but we'd probably want something more robust for those unique identifiers
+/**
+ * Creates an unused UniqueIdentifier given a set of pages
+ * @param pages that contain UniqueIdentifiers
+ * @returns new UniqueIdentifier that does not overlap with the pages
+ */
 function getNewId(existingIds: Page[]) {
     let i = 1;
     while (existingIds.some((v) => v.id === i)) {
